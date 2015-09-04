@@ -19,7 +19,7 @@ process.stdin.on("data", function (chunk) {
 process.stdin.on("end", function () {
     var result = palindrome.extract(input, 6);
     result.forEach(function (p) {
-        console.log(p);
+        console.log(p[0]);
     })
     process.exit(0);
 });
